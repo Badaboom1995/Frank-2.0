@@ -1,0 +1,22 @@
+.button{
+    padding: 10px 15px;
+    background-color: #fff;
+    text-transform: uppercase;
+    font-size: 14px;
+    border-radius: 3px;
+    border: none;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    cursor: pointer;
+    &--green{
+        background-color: #7AC74F;
+        color: #fff;
+    }
+    &--blue{
+        background-color: #6699CC;
+        color: #fff;
+    }
+    &--big{
+        width: 100%;
+        font-size: 18px;
+    }
+}

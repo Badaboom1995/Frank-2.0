@@ -1,0 +1,33 @@
+.set-goal-name{
+    text-align: left;
+    margin-bottom: 30px;
+    &__input{
+        width: 100%;
+        display: block;
+        margin: 15px 0;
+        margin-bottom: 30px;
+        border: none;
+        padding: 10px 5px;
+        border-bottom: 1px solid darken(#c9c9c9, 25%);
+        transition: 0.3s border-bottom ease;
+        &:focus{
+            outline: none;
+            border-bottom: 1px solid darken(#c9c9c9, 60%);
+        }
+    }
+    &__rules-title{
+        font-weight: normal;
+        font-size: 16px;
+        text-transform: uppercase;
+        margin-bottom: 15px;
+    }
+    &__rules-list{
+        padding-left: 20px;
+    }
+    &__rules-item{
+        margin-bottom: 12px;
+        // list-style: none;
+        font-size: 14px;
+        // letter-spacing: 0.7px;
+    }
+}

@@ -1,0 +1,51 @@
+.set-difficulty{
+    display: flex;
+    flex-direction: column;
+    &__input{
+        display: none;
+    }
+    &__label{
+        position: relative;
+        width: 100%;
+        padding: 7px;
+        padding-left: 15px;
+        margin-bottom: 10px;
+        border-radius: 3px;
+        font-size: 14px;
+        transition: 0.1s all ease;
+        cursor: pointer;
+        &--easy{
+            border: 1px solid #009B72;
+            &:hover{
+                background-color: rgba(#009B72, 0.5);
+            }
+        }
+        &--medium{
+            border: 1px solid #ffd166;
+            &:hover{
+                background-color: rgba(#ffd166, 0.5);
+            }
+        }
+        &--hard{
+            border: 1px solid #E54B4B;
+            &:hover{
+                background-color: rgba(#E54B4B, 0.5);
+            }
+        }
+    }
+    &__input:checked+&__label--easy{
+        
+        background-color: #009B72;
+        color: #fff;
+    }
+    &__input:checked+&__label--medium{
+        
+        background-color: #ffd166;
+        color: #fff;
+    }
+    &__input:checked+&__label--hard{
+        
+        background-color: #E54B4B;
+        color: #fff;
+    }
+}

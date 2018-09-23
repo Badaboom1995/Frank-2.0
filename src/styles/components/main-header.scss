@@ -1,0 +1,26 @@
+.main-header{
+    position: relative;
+    padding: 30px 10px;
+    display: flex;
+    justify-content: center;
+    background-color: #FFD166;
+    display: none;
+    &__close{
+        position: absolute;
+        right: 600px;
+        top: 15px;
+        cursor: pointer;
+    }
+    &__nav{
+
+    }
+    &__nav-link{
+        margin-right: 30px;
+        font-size: 22px;
+        text-decoration: none;
+        color: #000;
+        &:last-child{
+            margin-right: 0;
+        }
+    }
+}

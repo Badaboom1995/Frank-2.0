@@ -2,16 +2,20 @@ import React from 'react';
 import { BrowserRouter, Route, Switch, Link, NavLink} from 'react-router-dom';
 import Header from '../components/Header.js'
 import Home from '../components/Home.js'
+import AddTarget from '../components/AddTarget.js'
+import Quests from '../components/Quests.js'
 import NotFoundPage from '../components/NotFoundPage.js'
 
 
 
 const AppRouter = () => (
     <BrowserRouter>
-    <div>
+    <div className='dashboard'>
         <Header/>
         <Switch>
             <Route path='/' component={Home} exact={true}/>
+            <Route path='/add-target' component={AddTarget}/>
+            <Route path='/quests' component={Quests}/>
             <Route component={NotFoundPage}/>
         </Switch>     
     </div>
